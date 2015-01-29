@@ -1,27 +1,30 @@
 from fuzzywuzzy import process
 
+verbose = True
+
 cs = dict()
 us = dict()
 
 def values(const):
 
 	choices = cs.keys()
-	choice = process.extractOne(const.to_lower.replace(' ','_'), choices)
+	choice = process.extractOne(const.lower().replace(' ','_'), choices)
 
-	if choice[1] < 100:
+	if verbose and choice[1] < 100:
 		print('Values: Matched {0} to {1}'.format(const, choice[0]))
 
-	return cs[choice]
+	return cs[choice[0]]
 
 
 def units(const):
-	choices = us.keys()
-	choice = process.extractOne(const, choices)
 
-	if choice[1] < 100:
+	choices = us.keys()
+	choice = process.extractOne(const.lower().replace(' ','_'), choices)
+
+	if verbose and choice[1] < 100:
 		print('Units: Matched {0} to {1}'.format(const, choice[0]))
 
-	return us[choice]
+	return us[choice[0]]
 
 
 # Quantum physics
@@ -166,7 +169,7 @@ calorie = cs['calorie']
 
 cs['mass_of_the_sun'] = 1.9884e30
 us['mass_of_the_sun'] = 'kg'
-Msun = cs['mass_of_sun']
+Msun = cs['mass_of_the_sun']
 
 cs['radius_of_the_sun'] = 6.9600e8	
 us['radius_of_the_sun'] = 'm'
@@ -178,14 +181,14 @@ Lsun = cs['solar_luminosity']
 
 cs['mass_of_the_earth'] = 5.9722e24
 us['mass_of_the_earth'] = 'kg'
-Mearth = cs['mass_of_earth']
+Mearth = cs['mass_of_the_earth']
 
 cs['radius_of_the_earth'] = 6.3781e6
 us['radius_of_the_earth'] = 'm'
 Rearth = cs['radius_of_the_earth']
 
 cs['year'] = 3.1557e7
-us'year'] = 's'
+us['year'] = 's'
 year = cs['year']
 
 
