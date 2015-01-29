@@ -1,19 +1,19 @@
 ## PhysCon
 
-A library of physical constants and units. 
+Makes it easy to insert physical constants and units in python calculations.
 
-Requirements are fuzzywuzzy, which can be installed by 
+`fuzzywuzzy` is a requirements, which can be installed by:
 
     pip install fuzzywuzzy
 
-The library is used simply like:
+The **physcon** library is simply used like:
 
     import physcon
 
     physcon.e      # --> returns 1.6022e-19
     physcon.Rsun   # --> returns 6.9600e8
 
-In addition physcon supplied two methods which mathc constant values and units to a `search_string` through `values(search_string)` and `units(search_string)`. 
+In addition **physcon** supplies two methods, which match constant values and units to a `search_string` through `values(search_string)` and `units(search_string)`. 
 
     import physcon
 
