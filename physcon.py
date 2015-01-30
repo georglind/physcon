@@ -27,6 +27,15 @@ def units(const):
 	return us[choice[0]]
 
 
+# Math
+cs['pi'] = 3.141592653589793
+us['pi'] = ''
+p = cs['pi']
+
+cs['e'] = 2.718281828459045
+us['e'] = ''
+p = cs['e']
+
 # Quantum physics
 
 cs['planck_constant'] = 6.6261e-34
@@ -41,16 +50,16 @@ hbar = cs['planck_constant_divided_2_pi']
 
 cs['bohr_magneton'] = 9.27400968e-24
 us['bohr_magneton'] = 'J T-1'
-muB = cs['bohr_magneton']
+mu_B = cs['bohr_magneton']
 
 cs['bohr_radius'] = 5.2917721092e-11
 us['bohr_radius'] = 'm'
-RB = cs['bohr_radius']
+R_B = cs['bohr_radius']
 a = cs['bohr_radius']
 
 cs['flux_quantum'] = 2.067833758e-15
 us['flux_quantum'] = 'Wb'
-phi0 = cs['flux_quantum']
+phi_0 = cs['flux_quantum']
 
 cs['rydberg_energy'] = 2.1799e-18
 us['rydberg_energy'] = 'J'
@@ -58,12 +67,15 @@ Ry = cs['rydberg_energy']
 
 cs['rydberg_wavenumber_constant'] = 1.0974e7
 us['rydberg_wavenumber_constant'] = 'J'
-RH = cs['rydberg_wavenumber_constant']
+R_H = cs['rydberg_wavenumber_constant']
 
 cs['quantized_hall_resistance'] = 2.5813e4
 us['quantized_hall_resistance'] = 'Ohm'
-R0 = cs['quantized_hall_resistance']
+R_0 = cs['quantized_hall_resistance']
 
+cs['compton_wavelength_of_electron'] = 2.4263102389e-12
+us['compton_wavelength_of_electron'] = 'm'
+lambda_e = cs['compton_wavelength_of_electron']
 
 # QED
 
@@ -75,11 +87,11 @@ alpha = cs['fine_structure_constant']
 
 cs['mass_of_electron'] = 9.10938291e-31
 us['mass_of_electron'] = 'kg'
-me = cs['mass_of_electron']
+m_e = cs['mass_of_electron']
 
 cs['mass_of_proton'] = 1.672621777e-27
 us['mass_of_proton'] = 'kg'
-mp = cs['mass_of_proton']
+m_p = cs['mass_of_proton']
 
 cs['atomic_mass_unit'] = 1.660538921e-27
 us['atomic_mass_unit'] = 'kg'
@@ -109,11 +121,11 @@ c = cs['speed_of_light']
 
 cs['permittivity_of_free_space'] = 8.8542e-12
 us['permittivity_of_free_space'] = 'F m-1'
-epsilon0 = cs['permittivity_of_free_space']
+epsilon_0 = cs['permittivity_of_free_space']
 
 cs['permeability_of_free_space'] = 1.2566e-6
 us['permeability_of_free_space'] = 'N A-2'
-mu0 = cs['permeability_of_free_space']
+mu_0 = cs['permeability_of_free_space']
 
 # Statistical Physics
 
@@ -169,23 +181,23 @@ calorie = cs['calorie']
 
 cs['mass_of_the_sun'] = 1.9884e30
 us['mass_of_the_sun'] = 'kg'
-Msun = cs['mass_of_the_sun']
+M_sun = cs['mass_of_the_sun']
 
 cs['radius_of_the_sun'] = 6.9600e8	
 us['radius_of_the_sun'] = 'm'
-Rsun = cs['radius_of_the_sun']
+R_sun = cs['radius_of_the_sun']
 
 cs['solar_luminosity'] = 3.8427e26
 us['solar_luminosity'] = 'W'
-Lsun = cs['solar_luminosity']
+L_sun = cs['solar_luminosity']
 
 cs['mass_of_the_earth'] = 5.9722e24
 us['mass_of_the_earth'] = 'kg'
-Mearth = cs['mass_of_the_earth']
+M_earth = cs['mass_of_the_earth']
 
 cs['radius_of_the_earth'] = 6.3781e6
 us['radius_of_the_earth'] = 'm'
-Rearth = cs['radius_of_the_earth']
+R_earth = cs['radius_of_the_earth']
 
 cs['year'] = 3.1557e7
 us['year'] = 's'
